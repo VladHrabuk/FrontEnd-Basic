@@ -1,28 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework 3</title>
-    <link rel="stylesheet" href="style.css">
+    <!--Знаю, що краще підключати окремий файл style.css, але це так, щоб спробувати-->
+    <style>
+        h2 {
+            color: #0f0;
+            font-weight: 700;
+        }
+
+        h1 {
+            color: #f00;
+        }
+    </style>
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <nav>
+            <a href="./index.html">Головна сторінка</a>
+            <a href="./gallery.html" target="_blank" rel="noopener noreffer">Галерея</a>
+        </nav>
+    </header>
     <main>
         <section>
-            <h1>Homework 3</h1>
-            <ul>
-                <li> git status -</li>
-                <li> git ignore -</li>
-                <li> git add -</li>
-                <li> git commit -</li>
-            </ul>
+            <h1>Команди Git</h1>
+            <h2>Першочергові налаштування</h2>
+            <dl>
+                <dt><b>git config --global user.name "[ім'я]"</b></dt>
+                <dd>Встановлює ім'я, яке буде відображатися в полі автора у виконуваних вами комітів</dd>
+                <dt><b>git config --global user.email "[адреса електронної пошти]"</b></dt>
+                <dd>Встановлює адресу електронної пошти, яка буде відображатися в інформації у виконуваних вами комітів
+                </dd>
+            </dl>
+            <h2>Створення репозиторію</h2>
+            <dl>
+                <dt><b>git init [назва проекту]</b></dt>
+                <dd>Створює новий локальний репозиторій із заданим іменем</dd>
+                <dt><b>git clone [url-адреса]</b></dt>
+                <dd>Скачує репозиторій із всією історією змін</dd>
+            </dl>
+            <h2>Внесення змін</h2>
+            <dl>
+                <dt><b>git status</b></dt>
+                <dd>Перечислює всі нові або змінені файли, які потребують фіксації</dd>
+                <dt><b>git add [файл]</b></dt>
+                <dd>Індексує вказаний файл для коміту</dd>
+                <dt><b>git commit -m "[повідомлення з описом]"</b></dt>
+                <dd>Фіксує проіндексовані зміни і зберігає їх в історію версій</dd>
+            </dl>
+            <h2>Колективна робота</h2>
+            <dl>
+                <dt><b>git branch</b></dt>
+                <dd>Показує список віток коміту</dd>
+                <dt><b>git branch [ім'я вітки]</b></dt>
+                <dd>Створює нову вітку</dd>
+                <dt><b>git switch -c [ім'я вітки]</b></dt>
+                <dd>Переключається на нову і вітку і обновляє робочу директорію до її стану</dd>
+                <dt><b>git branch -d [ім'я вітки]</b></dt>
+                <dd>Видаляє вибрану вітку</dd>
+            </dl>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>
+            &copy;
+            All rights reserved.
+        </p>
+    </footer>
 </body>
 
 </html>
