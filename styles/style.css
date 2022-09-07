@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 img {
@@ -14,4 +16,53 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #151515;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+h1 {
+  text-align: center;
+  color: #2f0c87;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  padding-left: 20px;
+}
+
+.wrapper {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.card {
+  background-color: #e0e0e0;
+  max-width: 250px;
+  padding: 0px 35px 80px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2f0c87;
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
 }
