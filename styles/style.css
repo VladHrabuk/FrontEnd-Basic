@@ -15,3 +15,26 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #151515;
+}
+
+.clearfix {
+  display: block;
+  clear: both;
+}
+
+.floatLeft {
+  float: left;
+  margin-right: 1rem;
+}
+
+.floatRight {
+  float: right;
+  margin-left: 1rem;
+}
