@@ -41,14 +41,6 @@ body {
   height: 200px;
   background-color: #fc8f8f;
   float: left;
-  margin-right: 440px;
-}
-
-.squareRight {
-  width: 200px;
-  height: 200px;
-  background-color: #fc8f8f;
-  float: right;
 }
 
 .squareSmall {
@@ -65,11 +57,11 @@ body {
   margin-right: 15px;
 }
 
-.length {
-  margin-left: 670px;
-}
-
 .position2 {
   margin-right: 0;
   margin-left: 15px;
+}
+
+.length {
+  float: right;
 }
