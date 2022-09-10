@@ -23,18 +23,3 @@ html {
   line-height: 1.7;
   color: #151515;
 }
-
-.clearfix {
-  display: block;
-  clear: both;
-}
-
-.floatLeft {
-  float: left;
-  margin-right: 1rem;
-}
-
-.floatRight {
-  float: right;
-  margin-left: 1rem;
-}
