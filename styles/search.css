@@ -5,10 +5,11 @@
 
 .container {
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
   margin: 50px auto 0 auto;
-  padding: 10px 10px;
+  padding: 20px 20px;
   text-align: center;
+  background-color: #e8f8ff;
   border: 2px solid #6e6d73;
   border-radius: 1rem;
   box-shadow: 0 0 20px 20px rgba(85, 85, 85, 0.1);
@@ -16,7 +17,7 @@
 
 html {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.7;
   color: #151515;
@@ -26,6 +27,14 @@ h1 {
   font-size: 22px;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.option input[type="checkbox"]:checked + span {
+  color: #1a1ca1;
+}
+
 button {
   padding: 2px;
   margin-top: 10px;
@@ -33,6 +42,18 @@ button {
   background: #dcddf2;
 }
 
+input,
+select {
+  padding: 2px 5px;
+}
+
 p {
-  padding-top: 10px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+textarea {
+  resize: none;
+  width: 300px;
+  height: 5rem;
 }
