@@ -1,19 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  max-width: 100%;
-}
-
 .container {
   width: 100%;
-  max-width: 1140px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 html {
@@ -24,17 +13,36 @@ html {
   color: #151515;
 }
 
-.clearfix {
-  display: block;
-  clear: both;
+body {
+  font-size: 20px;
+  padding: 5rem;
 }
 
-.floatLeft {
-  float: left;
-  margin-right: 1rem;
+th,
+td {
+  padding: 0.25rem;
 }
 
-.floatRight {
-  float: right;
-  margin-left: 1rem;
+table {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tableColour {
+  background: yellow;
+}
+
+.position {
+  border: 1px solid #a6a6a6;
+}
+
+.align {
+  position: relative;
+  top: -20px;
+}
+
+.header {
+  font-size: 22px;
+  font-weight: 700;
 }
