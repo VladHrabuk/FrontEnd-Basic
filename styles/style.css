@@ -1,19 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-img {
-  max-width: 100%;
-}
-
-.container {
-  width: 100%;
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  box-sizing: border-box;
 }
 
 html {
@@ -24,17 +12,146 @@ html {
   color: #151515;
 }
 
-.clearfix {
+body {
+  max-width: 1920px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* --------- header ------------------------------- */
+
+.background {
+  background-color: #eeeff1;
+}
+
+.position {
+  display: inline-block;
+  margin: 79px 0;
+}
+
+a {
+  padding-right: 42px;
+  color: #34547a;
+  line-height: 26.25px;
+  font-weight: 500;
+}
+
+/* ------------block_1------------------------- */
+
+.headline {
+  display: inline-block;
+  margin: 83px 0;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 79px;
+}
+
+.length {
+  max-width: 540px;
+  margin: 60px 0 84px 0;
+}
+
+.button {
+  padding: 19px 41px;
+  background-color: #34547a;
+  margin-bottom: 80px;
+}
+
+.textButton {
+  color: #fff;
+  letter-spacing: 0.1em;
+}
+
+/* ----------- block_2 -------------------- */
+
+.containerWhite {
+  width: 100%;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.wrapper {
+  text-align: center;
+  display: inline-block;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 38px;
+  margin: 90px 0 50px 0;
+}
+
+.text {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+/* ------------- block_3 ---------------- */
+
+.back {
+  background: #34547a;
+}
+
+.wrapperCard {
+  display: inline-block;
+  margin: 100px 20px 100px 0;
+}
+
+.backdown {
+  padding-right: 16px;
+}
+.figure {
+  color: #fff;
+  font-size: 21px;
+}
+
+.smallText {
+  font-size: 16px;
+  color: #fff;
+}
+/* ------------- block_4 ---------------- */
+
+.backImage {
+  aspect-ratio: 5/3;
+  background: url(../images/Rectangle.jpg) no-repeat center/cover;
+  max-width: 1100px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.feature {
   display: block;
-  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 250px;
 }
 
-.floatLeft {
-  float: left;
-  margin-right: 1rem;
+/* ------------- footer ---------------- */
+
+.footer {
+  padding: 50px 0;
 }
 
-.floatRight {
-  float: right;
-  margin-left: 1rem;
+.name {
+  color: #fff;
+  font-size: 21px;
+}
+
+.rights {
+  color: #fff;
+  font-size: 13px;
 }
