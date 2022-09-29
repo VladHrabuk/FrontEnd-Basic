@@ -3,19 +3,6 @@
   padding: 0;
 }
 
-img {
-  max-width: 100%;
-}
-
-.container {
-  width: 100%;
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -24,17 +11,78 @@ html {
   color: #151515;
 }
 
-.clearfix {
+.containerBlue {
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 3px;
+  background: #2085e3;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  background: #3d3c3c;
+}
+
+.parent {
+  display: flex;
+}
+
+.parent li {
+  max-width: 200px;
+  list-style: none;
+  background: #3d3c3c;
+  position: relative;
+}
+
+.parent a {
+  color: #e0e0e0;
   display: block;
-  clear: both;
+  text-align: center;
+  padding: 15px 40px;
+  text-decoration: none;
 }
 
-.floatLeft {
-  float: left;
-  margin-right: 1rem;
+.parent a:hover {
+  background: #2085e3;
 }
 
-.floatRight {
+.child {
+  position: absolute;
+  top: 100%;
+  display: none;
+  padding: 0;
+}
+
+.parent li:hover > ul {
+  display: block;
+}
+
+.parent ul ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+.border {
+  border: 2px solid #0271d9;
+  width: 200px;
+}
+
+.border:last-child {
+  border-top: 0px solid #0271d9;
+}
+
+span {
   float: right;
-  margin-left: 1rem;
+}
+
+.hover:hover {
+  background: #2085e3;
 }
