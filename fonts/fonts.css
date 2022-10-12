@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Bitter-Regular";
+  src: url("Bitter-Regular.woff2") format("woff2"),
+    url("Bitter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("Raleway-Regular.woff2") format("woff2"),
+    url("Raleway-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
