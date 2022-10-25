@@ -1,40 +1,206 @@
+:root {
+  --h1-color: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  --text-href-color: #24a3ff;
+  --text-name-color: #323264;
+  --text-grey: #b3b3ba;
+  --text-active: #f0145a;
+  --back-color: #e5e5e5;
+}
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /*Значення width/height задають висоту/ширину всього ел-нта */
 }
-
 img {
   max-width: 100%;
+  object-fit: cover; /*Змінює пропорції так, щоб зберегти їх при заповненні блока */
+  object-position: center;
 }
-
+html {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  color: #323264;
+}
+.background {
+  width: 100%;
+  background-color: var(--back-color);
+}
+.container-white {
+  width: 100%;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
 .container {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1630px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-
-html {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.7;
-  color: #151515;
+.container-text {
+  width: 100%;
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 38px;
+  line-height: 46px;
+  margin-top: 65px;
+  color: var(--text-active);
 }
-
-.clearfix {
-  display: block;
-  clear: both;
+.text-center {
+  text-align: center;
 }
-
-.floatLeft {
-  float: left;
-  margin-right: 1rem;
+.flex {
+  display: flex;
 }
-
-.floatRight {
-  float: right;
-  margin-left: 1rem;
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.items-center {
+  align-items: center;
+}
+.justify-content {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-content {
+  align-content: center;
+}
+a {
+  text-decoration: none;
+}
+.button-lang {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.logo {
+  padding-top: 50px;
+}
+.pad {
+  margin-left: 4px;
+}
+.nav-menu {
+  margin-left: 15px;
+  color: var(--text-href-color);
+}
+.lang {
+  margin-left: 14px;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: var(--text-grey);
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.lang.active {
+  background-color: var(--text-active);
+  color: #fff;
+  padding: 5px;
+  border-radius: 8px;
+}
+.dot {
+  margin: 0 6px;
+}
+.place {
+  color: var(--text-grey);
+}
+a:hover > svg path {
+  fill: #24a3ff;
+}
+.active-hover {
+  border-bottom: 2px solid var(--text-active);
+  color: var(--text-active);
+}
+.wrap-pad {
+  padding-top: 16px;
+}
+.gradient {
+  background: linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text; /* Створює градієнт для тексту*/
+  -webkit-text-fill-color: transparent;
+}
+/* -------------------------------- CARDS---------------------------------------- */
+.card-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+card {
+  max-width: 490px;
+}
+h3 {
+  margin-top: 15px;
+}
+.profesion {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--text-grey);
+  margin-top: 5px;
+}
+.border-img {
+  border-radius: 12px;
+}
+.ellipse {
+  margin-left: 11px;
+  margin-top: 8px;
+}
+.circle {
+  background: #f5f5fa;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+/* -------------------- FOOTER ------------------------------ */
+.container-gray {
+  width: 100%;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f5f5fa;
+}
+.foot {
+  background-color: #f5f5fa;
+}
+.place-foot {
+  color: #323264;
+}
+.map {
+  color: var(--text-href-color);
+  font-size: 12px;
+  line-height: 15px;
+}
+.rights {
+  color: var(--text-grey);
+}
+.phone {
+  color: #46466e;
+}
+.mail {
+  color: #24a3ff;
+}
+.padding {
+  padding: 30px 0;
+}
+.paddind-bottom {
+  padding-bottom: 30px;
+}
+.change:hover > svg path {
+  fill: #0b19db;
+}
+.card:hover h3 {
+  color: var(--text-active);
+}
+.card:hover svg path {
+  stroke: var(--text-active);
 }

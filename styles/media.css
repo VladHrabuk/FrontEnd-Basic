@@ -1,0 +1,139 @@
+@media screen and (max-width: 768px) {
+  .card-wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 375px) {
+  .card-wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 1440px) {
+  .container-text {
+    max-width: 1000px;
+  }
+  .container {
+    max-width: 1320px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container-text {
+    max-width: 660px;
+  }
+  .container {
+    max-width: 900px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-text {
+    max-width: 640px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container-text {
+    max-width: 330px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 648px;
+    position: relative;
+  }
+  .wrap {
+    position: absolute;
+    bottom: 0px;
+    top: 50px;
+    left: 5px;
+  }
+  .wrap-pad {
+    position: absolute;
+    top: 130px;
+    bottom: 20px;
+  }
+  .pos {
+    position: absolute;
+    top: 100px;
+  }
+  .container-text {
+    padding-top: 140px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .block .flex {
+    display: block;
+    text-align: center;
+  }
+  .media-center {
+    justify-content: center;
+  }
+  .rights {
+    position: absolute;
+    bottom: 0px;
+    left: 29%;
+  }
+  .paddind-bottom {
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hidden {
+    display: none;
+  }
+  .flex-mobile {
+    display: flex;
+  }
+  .justify-mobile {
+    justify-content: center;
+  }
+  .items-mobile {
+    align-items: center;
+  }
+  .posit {
+    position: absolute;
+    right: 15px;
+  }
+  .gray {
+    background-color: #f5f5f5;
+    padding: 10px 0;
+  }
+  .logo-small {
+    padding-top: 15px;
+    padding-left: 15px;
+  }
+  .container-text-small {
+    max-width: 310px;
+    padding-left: 10px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    line-height: 36px;
+    color: var(--text-active);
+  }
+  .card-wrap {
+    padding: 30px 0;
+    gap: 30px;
+  }
+  .place-foot {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  .change {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .mail {
+    padding: 10px 0 30px 0;
+  }
+  .light-gray {
+    color: #b3b3ba;
+  }
+}
+@media screen and (min-width: 375px) {
+  .hidden-all {
+    display: none;
+  }
+}
