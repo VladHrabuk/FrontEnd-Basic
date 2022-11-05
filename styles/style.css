@@ -38,3 +38,12 @@ html {
   float: right;
   margin-left: 1rem;
 }
+:root {
+  --h-color: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  --text-href-color: #24a3ff;
+  --text-grey: #b3b3ba;
+  --text-black: #46466e;
+  --text-active: #f0145a;
+  --background: #f5f5fa;
+  --footer-color: #f5f5fa;
+}
