@@ -4,7 +4,7 @@
   --text-name-color: #323264;
   --text-grey: #b3b3ba;
   --text-active: #f0145a;
-  --back-color: #e5e5e5;
+  --footer-color: #f5f5fa;
 }
 * {
   margin: 0;
@@ -25,7 +25,7 @@ html {
 }
 .background {
   width: 100%;
-  background-color: var(--back-color);
+  background-color: var(--footer-color);
 }
 .container-white {
   width: 100%;
@@ -70,16 +70,14 @@ html {
 .justify-between {
   justify-content: space-between;
 }
+.justify-end {
+  justify-content: end;
+}
 .align-content {
   align-content: center;
 }
 a {
   text-decoration: none;
-}
-.button-lang {
-  border: none;
-  background: none;
-  cursor: pointer;
 }
 .logo {
   padding-top: 50px;
@@ -91,21 +89,27 @@ a {
   margin-left: 15px;
   color: var(--text-href-color);
 }
+.nav-menu:not(.active-hover):hover {
+  border-bottom: 2px solid var(--text-href-color);
+  color: var(--text-href-color);
+}
 .lang {
-  margin-left: 14px;
+  margin-left: 4px;
   font-size: 12px;
   line-height: 14px;
-  text-align: center;
   color: var(--text-grey);
   border: none;
-  background: none;
+  background: #fff;
   cursor: pointer;
-}
-.lang.active {
-  background-color: var(--text-active);
-  color: #fff;
   padding: 5px;
   border-radius: 8px;
+}
+.active {
+  background: var(--text-active);
+  color: #fff;
+}
+.lang:not(.active):hover {
+  background: #f5f5fa;
 }
 .dot {
   margin: 0 6px;
@@ -114,7 +118,7 @@ a {
   color: var(--text-grey);
 }
 a:hover > svg path {
-  fill: #24a3ff;
+  fill: var(--text-active);
 }
 .active-hover {
   border-bottom: 2px solid var(--text-active);
@@ -150,6 +154,8 @@ h3 {
 }
 .border-img {
   border-radius: 12px;
+  height: 400px;
+  width: 493px;
 }
 .ellipse {
   margin-left: 11px;
@@ -196,11 +202,14 @@ h3 {
   padding-bottom: 30px;
 }
 .change:hover > svg path {
-  fill: #0b19db;
+  fill: var(--text-active);
 }
 .card:hover h3 {
   color: var(--text-active);
 }
 .card:hover svg path {
   stroke: var(--text-active);
+}
+.mail:hover {
+  color: var(--text-active);
 }
