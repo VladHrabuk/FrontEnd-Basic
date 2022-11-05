@@ -45,5 +45,21 @@ html {
   --text-black: #46466e;
   --text-active: #f0145a;
   --background: #f5f5fa;
-  --footer-color: #f5f5fa;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*Значення width/height задають висоту/ширину всього ел-нта */
+}
+img {
+  max-width: 100%;
+  object-fit: cover; /*Змінює пропорції так, щоб зберегти їх при заповненні блока */
+  object-position: center;
+}
+html {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  color: #323264;
 }
